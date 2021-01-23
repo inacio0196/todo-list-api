@@ -8,10 +8,12 @@ exports.seed = function(knex) {
         {
           task_title: 'Tarefa1',
           task_description: 'Descrição da tarefa 1',
+          user_id: 1,
         },
         {
           task_title: 'Tarefa2',
           task_description: 'Descrição da tarefa 2',
+          user_id: 2,
         },
       ]);
     });
