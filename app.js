@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use('/tasks', tasksRoute)
+app.use('/tasks/:id', tasksRoute)
 app.use('/sticky_notes', stickyNotesRoute)
 
 app.use((request, response, next) => {
